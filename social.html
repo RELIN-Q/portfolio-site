@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <title>Jordan's Social Media</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="reset.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <style>
+        .nav-5 {
+            background-color: #B60000;
+        }
+    </style>
+</head>
+<body>
+<div class="page-wrap">
+
+    <header>
+        <a href="index.html"><img alt="Jordan" class="name1" src="media/jordan-alt.png"></a>
+        <a href="index.html"><img alt="Jordan" class="name3" src="media/jordan-alt-big.png"></a>
+        <a href="index.html"><img alt="Mattmiller" class="name2" src="media/mattmiller-alt.png"></a>
+    </header>
+
+    <nav class="nav-bar">
+        <a class="nav-1" href="videos.html">Videos</a>
+        <a class="nav-2" href="images.html">Images</a>
+        <a class="nav-3" href="index.html">Home</a>
+        <a class="nav-4" href="blog.html">A Blog</a>
+        <a class="nav-5" href="social.html">Social</a>
+    </nav>
+
+    <main class="social-main">
+
+        <h1>contact</h1>
+        <form action="https://formspree.io/jordanmattmiller@gmail.com" class="mail-form" method="POST">
+            <div class="input-box">
+                <input autofocus class="input" name="firstname" placeholder="First Name" required type="firstname">
+                <input class="input" name="lastname" placeholder="Last Name" required type="lastname">
+                <input class="input" name="email" placeholder="Your Email" required type="email">
+                <textarea class="text-area" name="message" placeholder="Your Message" required rows="5"></textarea>
+            </div>
+            <input class="submit" type="submit" value="Send">
+        </form>
+
+        <h1>social</h1>
+        <div class="dropdown-group">
+            <button class="collapse">YouTube</button>
+            <div class="content">
+                <p>
+                    My YouTube channel is where I upload almost all of my video projects and assignments.
+                </p>
+                <a href="https://www.youtube.com/channel/UC5fzPhHsF1p_47bze1imCGA" rel="noopener" target="_blank">Check
+                    it out</a>
+            </div>
+            <button class="collapse">Facebook</button>
+            <div class="content">
+                <p>
+                    My Facebook is where I post some funny jokes and some inspirational stuff, but not very many big
+                    projects. I use vulgarities sometimes as well, sorry.
+                </p>
+                <a href="https://www.facebook.com/jordan.mattmiller" rel="noopener" target="_blank">Say hi!</a>
+            </div>
+            <button class="collapse">Instagram</button>
+            <div class="content">
+                <p>
+                    My Instagram is where I post some side projects, works in progress, pictures of myself, and some
+                    jokes.
+                </p>
+                <a href="https://www.instagram.com/jordanmattmiller/" rel="noopener" target="_blank">Peep My Insta</a>
+            </div>
+            <button class="collapse">Twitter</button>
+            <div class="content">
+                <p>
+                    My Twitter page is mostly just for finding funny jokes. I don't post much on Twitter myself.
+                </p>
+                <a href="https://twitter.com/Lenny77777770" rel="noopener" target="_blank">Tweet @me</a>
+            </div>
+        </div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapse");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "flex") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "flex";
+                    }
+                });
+            }
+        </script>
+    </main>
+
+    <footer>
+        <a href="https://www.facebook.com/jordan.mattmiller" id="facebook" rel="noopener" target="_blank"></a>
+        <a href="https://www.instagram.com/jordanmattmiller" id="instagram" rel="noopener" target="_blank"></a>
+        <a href="https://twitter.com/Lenny77777770" id="twitter" rel="noopener" target="_blank"></a>
+    </footer>
+</div>
+</body>
+</html>

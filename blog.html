@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+    <title>Jordan's Blog</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="reset.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <style>
+        .nav-4 {
+            background-color: #B60000;
+        }
+    </style>
+</head>
+
+<body>
+<div class="page-wrap">
+
+    <header>
+        <a href="index.html"><img alt="Jordan" class="name1" src="media/jordan-alt.png"></a>
+        <a href="index.html"><img alt="Jordan" class="name3" src="media/jordan-alt-big.png"></a>
+        <a href="index.html"><img alt="Mattmiller" class="name2" src="media/mattmiller-alt.png"></a>
+    </header>
+
+    <nav class="nav-bar">
+        <a class="nav-1" href="videos.html">Videos</a>
+        <a class="nav-2" href="images.html">Images</a>
+        <a class="nav-3" href="index.html">Home</a>
+        <a class="nav-4" href="blog.html">A Blog</a>
+        <a class="nav-5" href="social.html">Social</a>
+    </nav>
+
+    <main class="blog-main">
+        <article class="recent">
+            <section class="article-headers">
+                <h1>How to Summon a Vanilla Cake</h1>
+                <h2>A Step-By-Step Guide to Summoning a Beautiful Cake</h2>
+                <h2>Satire : 4 June 18</h2>
+            </section>
+            <p>In order to summon your very own vanilla cake, you will need a few supplies first. Some people might call
+                these supplies “sacrifices” or something similarly silly, but these supplies are definitely not
+                sacrifices.</p>
+            <p>You will need to gather these things in the correct order. If you obtain any supply in the incorrect
+                order, you will be moved backward through space and time and will need to restart. You will need a
+                spoon. Any old spoon will do, just make sure it isn’t made out of obsidian, or any other make-believe
+                rocks. Next, gather some grass from your front yard. After you gather your grass, you will need to get a
+                stuffy nose. If you have a stuffy nose already, just get someone else’s. After you get those things
+                you’ll need a paradox pen. If you don’t have access to a paradox pen, a paradox paperclip would also
+                work for this step, but your cake might be a bit dry. The last thing you will need to summon your cake
+                is a Blackstone ritual sink. Again, make sure it is not made out of any make-believe materials. A good
+                way to know if your sink is made out of fake stone is to turn the left knob 80 degrees to the right. If
+                your sink doesn’t howl at you in agony, it’s a fake!</p>
+            <p>Once you have gathered all of your materials in the correct order, you can finally start to summon your
+                cake. Go to your ritual sink and put the grass in the drain. Make sure the drain is open first, or your
+                cake will be chocolate instead of vanilla flavored, and it will also be made out of grass. For the
+                second step, write something on the sink with your paradox pen. For this step, it doesn’t really matter
+                what you write, as long as it’s 6-12 characters long, contains at least one number, one lowercase
+                letter, and one capital letter. Special characters are not allowed, and neither are spaces. If you don’t
+                have access to a paradox pen and are using a paradox paperclip, etch in your 18-character credit card
+                number along with the expiration date, CVV code, and the name on the card. Nothing will be charged to
+                your card until a 30-day wait period is up, then your 12-month subscription will start. At that point, a
+                random amount of money will be charged from the card each month, and you will get nothing in return.</p>
+            <p>The final steps to summoning your cake are difficult for most people, but we’re almost done! Take the
+                supply that we called a “spoon” and put it into your mouth. Bite down on it as hard as you can and put
+                your head into the ritual sink. Now, blow on your nose (or blow on your friend’s nose). Be very careful.
+                If you blow the grass out of the drain during this part of the ritual, you will fail and be sent to the
+                principal’s office.</p>
+            <p>If the spoon does not break in your mouth while blowing on your nose, congratulations, you did it very
+                wrong and made some rather unsettling creatures very, very unhappy. They will arrive shortly through a
+                portal. If the spoon shatters in your mouth, congratulations! You have successfully summoned a vanilla
+                cake!</p>
+            <p>Unfortunately, the next couple days will be used for shipping your cake, so do not do anything. The
+                surgeon needs you to be still enough to open up your stomach to put the cake in once it arrives.</p>
+        </article>
+        <button class="collapse">More Posts</button>
+        <div class="content">
+            <article class="old" id="song">
+
+            </article>
+        </div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapse");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "flex") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "flex";
+                    }
+                });
+            }
+        </script>
+    </main>
+
+    <footer>
+        <a href="https://www.facebook.com/jordan.mattmiller" id="facebook" rel="noopener" target="_blank"></a>
+        <a href="https://www.instagram.com/jordanmattmiller" id="instagram" rel="noopener" target="_blank"></a>
+        <a href="https://twitter.com/Lenny77777770" id="twitter" rel="noopener" target="_blank"></a>
+    </footer>
+</div>
+</body>
+</html>
