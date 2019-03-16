@@ -155,7 +155,6 @@ header a img
 {
 	height:350px;
 	border:10px solid white;
-    border-image:url(media/border.png) 10 round;
 }
 
 /*
