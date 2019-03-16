@@ -27,7 +27,7 @@ p
 	font-size:2em;
 	line-height:30px;
 	margin:10px;
-	letter-spacing:normal;
+	letter-spacing:2px;
 }
 
 h1
@@ -106,7 +106,7 @@ header a img
 	border-image:url(media/border.png) 10 round; /*separates nav from logo, sides, and content below*/
 }
 
-.nav-1, .nav-2, .nav-3, .nav-4 /*separators*/
+.nav-1, .nav-2 /*separators*/
 {
 	border:0px; /*invisible border*/
 	border-bottom:10px solid white; /*adds a border on the bottom only*/
@@ -151,7 +151,15 @@ header a img
 	border-image:url(media/border.png) 10 round;
 }
 
-.button /*link,visited,hover,active*/
+.index-main iframe
+{
+	height:350px;
+	border:10px solid white;
+    border-image:url(media/border.png) 10 round;
+}
+
+/*
+.button /*link,visited,hover,active*//*
 {
 	display:flex;
 	flex-direction:column;
@@ -187,17 +195,7 @@ header a img
 {
 	color:white;
 	background-color:#050505;
-}
-
-/*----------------------------------SOCIAL---------------------------------*/
-
-.social-main
-{
-	display:flex;
-	flex-flow:column;
-	justify-content:center;
-	margin:0px 10px -10px 10px;
-}
+}*/
 
 .mail-form
 {
@@ -258,18 +256,42 @@ header a img
 	background-color:#050505;
 }
 
-.dropdown-group
+/*---------------------------------IMAGES----------------------------------*/
+
+.images-main
 {
 	display:flex;
 	flex-flow:column wrap;
 }
 
+.images-wrapper
+{
+	display:flex;
+	flex-wrap:wrap;
+	margin:0px 30px -10px 10px;
+}
+
+.images-container
+{
+	flex:660px;
+	justify-content:center;
+	max-width:100%;
+}
+
+.images-container img
+{
+	width:100%;
+	margin-bottom:10px;
+	border:10px solid white;
+}
+
 .collapse
 {
+    display:flex;
 	font-family:"ECB";
 	font-size:2em;
 	margin-bottom:10px;
-	padding:7px 10px 3px 10px;
+	padding:5px 10px 5px 10px;
 	cursor:pointer;
 	text-align:left;
 	text-transform:uppercase;
@@ -279,21 +301,14 @@ header a img
 	background-color:white;
 }
 
-.active, .collapsible:hover /*this is for hover colors and effects after clicking the dropdown*/
-{
-
-}
-
 .collapse:after
 {
-	float:right;
 	content:url(media/arrow-left.png);
 	image-rendering:pixelated;
 }
 
 .active:after
 {
-	float:right;
 	content:url(media/arrow-down.png);
 }
 
@@ -340,35 +355,6 @@ header a img
 {
 	color:white;
 	background-color:#050505;
-}
-
-/*---------------------------------IMAGES----------------------------------*/
-
-.images-main
-{
-	display:flex;
-	flex-flow:column wrap;
-}
-
-.images-wrapper
-{
-	display:flex;
-	flex-wrap:wrap;
-	margin:0px 30px -10px 10px;
-}
-
-.images-container
-{
-	flex:660px;
-	justify-content:center;
-	max-width:100%;
-}
-
-.images-container img
-{
-	width:100%;
-	margin-bottom:10px;
-	border:10px solid white;
 }
 
 .images-main .collapse
@@ -447,64 +433,6 @@ header a img
 .videos-main iframe:last-child
 {
 	margin-bottom:0px;
-}
-
-/*----------------------------------BLOG-----------------------------------*/
-
-.blog-main
-{
-	display:flex;
-	flex-flow:column nowrap;
-	justify-content:center;
-	margin-bottom:-10px;
-}
-
-.article-headers
-{
-	margin:10px 10px;
-	padding:0px;
-}
-
-.blog-main h1
-{
-	padding:0px;
-	margin:0px;
-	margin-top:10px;
-	line-height:40px;
-}
-
-.blog-main p
-{
-	font-size:2em;
-	line-height:30px;
-	text-align:left;
-	text-indent:25px;
-	margin:20px;
-}
-
-.blog-main .collapse
-{
-	margin:10px;
-	margin-top:0px
-}
-
-.blog-main .content
-{
-	margin:10px;
-	margin-top:-10px;
-}
-
-.recent
-{
-	margin:10px;
-	border:10px solid white;
-	border-image:url(media/border.png) 10 round;
-}
-
-.old .article-headers
-{
-	margin:10px 10px;
-	padding:0px;
 }
 
 /*---------------------------------FOOTER----------------------------------*/
@@ -601,7 +529,7 @@ footer a
 		font-size:2em;
 	}
 
-	.nav-2, .nav-3, .nav-4
+	.nav-2
 	{
 		border:0px; /*removes the bottom border*/
 		border-right:5px solid white; /*makes a separator that is 10px*/
@@ -614,22 +542,23 @@ footer a
 		border-right:5px solid white; /*contributes to the separators*/
 	}
 
-	.nav-5
+	.nav-3
 	{
 		border:0px; /*removes the bottom border*/
 		border-left:5px solid white; /*contributes to the separators*/
 	}
 
-	.nav-1, .nav-2, .nav-4, .nav-5
+	.nav-1, .nav-3
 	{
 		flex-grow:1; /*grows the links in conjunction to the "space-around"*/
 	}
 
-	.nav-3
+	.nav-2
 	{
 		flex-grow:2.5; /*makes the home button 2.5x bigger than the others*/
 	}
-
+    
+/*
 	.button a:link
 	{
 		font-size:2em;
@@ -657,7 +586,7 @@ footer a
 	{
 		margin-left:5px;
 	}
-
+*/
 	.images-wrapper
 	{
 		margin-right:0px;
@@ -688,7 +617,7 @@ footer a
 		margin-left:10px;
 	}
 
-	.videos-main iframe
+	.videos-main iframe, .index-main iframe
 	{
 		height:540px;
 	}
@@ -755,7 +684,7 @@ footer a
 
 @media only screen and (max-width:450px)
 {
-	.videos-main iframe
+	.videos-main iframe, .index-main iframe
 	{
 		height:210px;
 	}
