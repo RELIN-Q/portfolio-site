@@ -101,6 +101,7 @@ header a img
 	display:flex;
 	flex-flow:column wrap;
 	justify-content:center;
+    letter-spacing:2px;
 	margin:10px 10px 0px 10px;
 	border:10px solid white;
 	border-image:url(media/border.png) 10 round; /*separates nav from logo, sides, and content below*/
@@ -151,20 +152,12 @@ header a img
 	border-image:url(media/border.png) 10 round;
 }
 
-.left
-{
-    text-align:left;
-}
-
-.right
-{
-    text-align:right;
-}
-
 b
 {
     text-decoration-line:underline;
+    -webkit-text-decoration-line:underline;
     text-decoration-color:#B60000;
+    -webkit-text-decoration-color:#B60000;
 }
 
 .index-main iframe
@@ -572,6 +565,17 @@ footer a
 	{
 		flex-grow:2.5; /*makes the home button 2.5x bigger than the others*/
 	}
+    
+    .left
+    {
+        text-align:left;
+    }
+
+    .right
+    {
+        text-align:right;
+    }
+
     
 /*
 	.button a:link
