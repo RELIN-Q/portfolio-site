@@ -38,7 +38,7 @@ h1
 	margin:17px 0px -1px 8px;
 	letter-spacing:2px;
 	text-transform:uppercase;
-	text-shadow:-1px 0px red, 1px 0px blue;
+	text-shadow:-2px 0px red, 2px 0px blue;
 }
 
 h2
@@ -132,8 +132,8 @@ header a img
 
 .nav-bar a:hover
 {
-	color:#050505; /*green r:000 g:182 b:000*/
-	background-color:#00B600; /*CONTRAST*/
+	color:#050505; /*CONTRAST*/
+	background-color:#00B600; /*green r:000 g:182 b:000*/ 
 }
 
 /*----------------------------------INDEX----------------------------------*/
@@ -152,12 +152,28 @@ header a img
 	border-image:url(media/border.png) 10 round;
 }
 
-b
+.underline-1
 {
     text-decoration-line:underline;
     -webkit-text-decoration-line:underline;
     text-decoration-color:#B60000;
     -webkit-text-decoration-color:#B60000;
+}
+
+.underline-2
+{
+	text-decoration-line:underline;
+    -webkit-text-decoration-line:underline;
+    text-decoration-color:#00B600;
+    -webkit-text-decoration-color:#00B600;
+}
+
+.underline-3
+{
+	text-decoration-line:underline;
+    -webkit-text-decoration-line:underline;
+    text-decoration-color:blue;
+    -webkit-text-decoration-color:blue;
 }
 
 .index-main iframe
