@@ -235,14 +235,20 @@ header a img
 	justify-content:center;
 }
 
-.input
+.label
 {
-	font-family:"ECB";
-	font-size:2em;
 	margin-bottom:10px;
 	padding:5px 10px;
-	color:white;
 	border:10px solid white;
+}
+
+.input
+{
+	width:100%;
+	font-family:"ECB";
+	font-size:2em;
+	color:white;
+	border:none;
 	outline:none;
 	background-color:#050505;
 }
