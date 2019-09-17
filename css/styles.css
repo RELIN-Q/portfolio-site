@@ -235,20 +235,15 @@ header a img
 	justify-content:center;
 }
 
-.label
-{
-	margin-bottom:10px;
-	padding:5px 10px;
-	border:10px solid white;
-}
-
 .input
 {
-	width:100%;
 	font-family:"ECB";
 	font-size:2em;
+	margin-bottom:10px;
+	padding:5px 10px;
 	color:white;
-	border:none;
+	border:10px solid white;
+	border-radius:0px;
 	outline:none;
 	background-color:#050505;
 }
@@ -262,6 +257,7 @@ header a img
 	resize:none;
 	color:white;
 	border:10px solid white;
+	border-radius:0px;
 	outline:none;
 	background-color:#050505;
 }
@@ -274,6 +270,7 @@ header a img
 	text-transform:uppercase;
 	color:#050505;
 	border:10px solid white;
+	border-radius:0px;
 	outline:none;
 	background-color:white;
 }
