@@ -30,6 +30,8 @@
 		<meta charset="UTF-8">
 		<title>Portage Trail Outfitters</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="#">
+		<meta name="keywords" content="Minnesota, hiking, camping, outdoors, canoeing, lodging, wilderness, Ensign Lake">
 	</head>
 	
 	<body>
@@ -47,7 +49,7 @@
 					<a href="javascript:void(0)" onClick="dropDown1()" class="caret"><i class="fa fa-caret-right" id="arrowOne"></i></a>
 
 					<div class="dropdown-content">
-						<a href="housing.html">Housing</a>
+						<a href="shop.html#housing">Housing</a>
 					</div>
 				</div>
 				
@@ -56,9 +58,9 @@
 					<a href="javascript:void(0)" onClick="dropDown2()" class="caret"><i class="fa fa-caret-right" id="arrowTwo"></i></a>
 					
 					<div class="dropdown-content">
-						<a href="contact.html">Contact</a>
-						<a href="tips.html">Tips</a>
-						<a href="history.html">History</a>
+						<a href="about.html#contact">Contact</a>
+						<a href="about.html#tips">Tips</a>
+						<a href="about.html#history">History</a>
 					</div>
 				</div>
 				
@@ -122,6 +124,7 @@
 							document.getElementById('arrowTwo').setAttribute('class', 'fa fa-caret-right');
 						}
 					};
+					
 				</script>
 			</nav> 
 			
@@ -129,15 +132,14 @@
 				<h1>Welcome!</h1>
 				<p>Welcome to Portage Trail Outfitters, nestled on the pristine banks of Ensign Lake, part of northern Minnesota’s world famous Boundary Waters Canoe Area Wilderness (BWCAW). At Portage Trail Outfitters, we pride ourselves on catering to your idea of an outdoor wilderness experience. Whether your sense of the great outdoors is a luxurious private cabin, or a bunkhouse to crash in before a peaceful and secluded trip into the wild, we can help you out.</p>
 				
-				
-				
-				<p><img class="tree-desktop" src="images/portage-tree.jpg" alt="a nice forest"/>In addition to various lodging options, Portage Trail Outfitters offers full service outfitting and guide services for your wilderness trip. Do you have the majority of your own gear, but forgot something? No problem, you can rent equipment à la cart. <br><br>At Portage Trail Outfitters, keep your eyes open for a rare moose sighting, ears open for the soothing evening song of the Minnesota loon, and your heart open for one of the most memorable experiences of your life. Enjoy your stay!</p>
+				<p><img class="tree-desktop" src="images/portage-tree.jpg" alt="a nice forest"/>In addition to various lodging options, Portage Trail Outfitters offers full service outfitting and guide services for your wilderness trip. Do you have the majority of your own gear, but forgot something? No problem, you can rent equipment &agrave; la cart. <br><br>At Portage Trail Outfitters, keep your eyes open for a rare moose sighting, ears open for the soothing evening song of the Minnesota loon, and your heart open for one of the most memorable experiences of your life.</p>
+				<h2>Enjoy your stay!</h2>
 				
 				<img class="tree-mobile" src="images/portage-tree.jpg" alt="a nice forest"/>
 			</main>
 			
 			<article class="gear">
-				<p>Save the stress and let us get the gear together for you.</p>
+				<h2>Save the stress and let us get the gear together for you.</h2>
 				<p>Portage Trail Outfitters offers only the most reliable and lightest weight gear. All packages are designed for two paddlers. For a solo trip outfitting prices or a custom quote please contact us.</p>
 				<p>Portage Trail Outfitters is also proud to offer fully guided trips. Take advantage of our wilderness experience and vast knowledge of the areas scenic beauty and wildlife hotspots.</p>
 			
@@ -194,16 +196,26 @@
 					</div>
 				</div>
 				
+				<h2>Interested in outfitting yourself?</h2>
+				<p>Download our suggested packing list for a weeklong stay in the wilderness. Feel free to use the list to help prepare for your trip, or to order any items that you may be missing. Items with an asterisk can be rented individually for &agrave; la carte pricing.</p>
+				
+				<p>Please email any needs to info@portagetrailoutfitters.com for a custom quote.</p>
+				
 				<script>
 					var coll = document.getElementsByClassName("collapse");
 					var i;
-					for (i = 0; i < coll.length; i++) {
-						coll[i].addEventListener("click", function () {
+					for (i = 0; i < coll.length; i++) 
+					{
+						coll[i].addEventListener("click", function () 
+						{
 							this.classList.toggle("active");
 							var content = this.nextElementSibling;
-							if (content.style.display === "flex") {
+							if (content.style.display === "flex") 
+							{
 								content.style.display = "none";
-							} else {
+							} 
+							else 
+							{
 								content.style.display = "flex";
 							}
 						});
@@ -224,7 +236,6 @@
 					}
 					(document,'script','weatherwidget-io-js');
 				</script>
-				
 			</footer>
 		</div>
 	</body>
