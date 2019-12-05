@@ -1,0 +1,341 @@
+@charset "UTF-8";
+
+@font-face
+{
+	font-family:"Belwe-Bold";
+	src:url("font/belwe-bold.otf");
+}
+
+@font-face
+{
+	font-family:"Avenir Next Bold";
+	src:url("font/avenir next pro bold.otf");
+}
+
+@font-face
+{
+	font-family:"Avenir Next Regular";
+	src:url("font/avenir next pro reg.otf");
+}
+
+body
+{
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size:100%;
+	color:white;
+	background-color:#1b3e38;
+}
+
+h1
+{
+	display:flex;
+	justify-content:center;
+	font-family:"Avenir Next Bold";
+	color:white;
+	background-color:#274943;
+	font-size:30pt;
+	padding-top:22px;
+}
+
+p
+{
+	font-family:"Avenir Next Regular";
+	color:white;
+	background-color:#274943;
+	font-size:16pt;
+	padding:16px;
+	line-height:20pt;
+	font-kerning:0.002em;
+}
+
+.page-wrap
+{
+	max-width:1000px;
+	margin:0 auto;
+	background-color:#1b3e38;
+}
+
+.page-header
+{
+	font-family:"Belwe-Bold";
+	font-size:55pt;
+	line-height:60pt;
+	text-align:center;
+	padding:15px 0px;
+	vertical-align:middle;
+}
+
+.page-header a
+{
+	text-decoration:none;
+	color:#e0ddcf;
+}
+
+
+/*--- MAIN NAV ---*/
+
+.topnav
+{
+	display:flex;
+	flex-flow:row wrap;
+	background-color:#e0ddcf;
+	overflow:hidden;
+	position:relative;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a
+{
+	flex:1 1 100%;
+	font-family:"Avenir Next Bold";
+	font-size:35pt;
+	color:#474448;
+	text-align:left;
+	padding:18px;
+	padding-bottom:16px;
+	text-decoration:none;
+}
+
+.topnav a:hover
+{
+	background-color:#c9c6ba;
+}
+
+/*Show the link that should open and close the topnav on small screens */
+.icon, .caret
+{
+	position:absolute;
+    right:0;
+    top:0;
+	height:inherit;
+	width:inherit;
+	padding:0px 18px;
+}
+
+#active
+{
+	/*box-shadow:inset 0 0 0 12px #e0ddcf, inset 0 -12px 0 12px #474448;*/
+}
+
+#arrowOne
+{
+	text-align:center;
+	width:40px;
+}
+
+#arrowTwo
+{
+	text-align:center;
+	width:40px;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown
+{
+	display:none;
+	flex-flow:column nowrap;
+	overflow:hidden;
+	position:relative;
+}
+
+.topnav.responsive .dropdown
+{
+	display:flex;
+	flex-flow:column nowrap;
+	flex:1 1 100%;
+	justify-content:left;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content
+{
+	display:none;
+	flex-flow:column nowrap;
+	position:relative;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a
+{
+	background-color:#fff;
+	text-decoration:none;
+}
+
+.dropdown-content a:hover
+{
+	background-color:#bbb;
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+main
+{
+	display:flex;
+	flex-flow:column;
+}
+
+.tree-mobile
+{
+	max-width:100%;
+	margin:16px;
+}
+
+.tree-desktop
+{
+	display:none;
+}
+
+/*--- COLLAPSABLE BUTTON ---*/
+
+.button-wrapper
+{
+	display:flex;
+	flex-flow:column wrap;
+}
+
+.collapse
+{
+	display:flex;
+	font-family:"Avenir Next Bold";
+	color:#474448;
+	font-size:20pt;
+	margin-bottom:12px;
+	padding:16px;
+	padding-bottom:12px;
+	cursor:pointer;
+	text-align:left;
+	border:none;
+	outline:none;
+	background-color:#e0ddcf;
+}
+
+.collapse i
+{
+	padding-left:12px;
+}
+
+.content
+{
+	display:none;
+	overflow:hidden;
+	flex-flow:column wrap;
+	margin:-12px 0px 0px 0px;
+}
+
+.button-container h2
+{
+	font-family:"Avenir Next Bold";
+	color:white;
+	background-color:#274943;
+	text-align:center;
+	font-size:16pt;
+	padding:16px;
+	padding-top:20px;
+}
+
+.button-container ul li
+{
+	font-family:"Avenir Next Regular";
+	color:white;
+	background-color:#274943;
+	font-size:16pt;
+	padding:16px;
+	margin:0;
+	line-height:20pt;
+	font-kerning:0.002em;
+}
+
+
+/*---FOOTER---*/
+
+.page-footer
+{
+	margin-top:20px;
+}
+
+.footer-img
+{
+	max-width:100%;
+	height:auto;
+}
+
+@media only screen and (max-width:480px)
+{
+	.page-header
+	{
+		font-size:42pt;
+		line-height:45pt;
+	}
+}
+
+@media only screen and (min-width:42em)
+{	
+	.tree-mobile
+	{
+		display:none;
+	}
+	
+	.tree-desktop
+	{
+		display:block;
+		float:left;
+		padding-right:16px;
+		max-width:400px;
+		background-color:#274943;
+	}
+	
+	.gear
+	{
+		margin-top:24px;
+	}
+	
+	.collapse
+	{
+		margin-bottom:24px;
+	}
+	
+	.content
+	{
+		margin:-24px 0px 0px 0px;
+	}
+	
+	/*------------NAVIGATION-------------*/
+	
+	.topnav
+	{
+		flex-flow:row nowrap;
+		justify-content:space-around;
+	}
+	
+	.topnav .icon, .dropdown .caret
+	{
+		display:none;
+  	}
+	
+  	.topnav a, .dropdown a
+	{
+		display:flex;
+		flex:1 1 100%;
+		justify-content:center;
+		padding:0;
+		padding-top:18px;
+		padding-bottom:16px;
+  	}
+	
+	.topnav.responsive a
+	{
+		flex:1 1 100%;
+	}
+	
+  	.dropdown
+	{
+		display:flex;
+		flex:1 1 100%;
+	}
+}
+
+@media only screen and (min-width:62.5em)
+{
+	
+}

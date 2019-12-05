@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153085022-1"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag()
+			{
+				dataLayer.push(arguments);
+			}
+  			gtag('js', new Date());
+  			gtag('config', 'UA-153085022-1');
+		</script>
+		
+		<!--FAVICON-->
+		<link rel="apple-touch-icon" sizes="180x180" href="css/media/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="css/media/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="css/media/favicon/favicon-16x16.png">
+		<link rel="manifest" href="css/media/favicon/site.webmanifest">
+		<link rel="mask-icon" href="css/media/favicon/safari-pinned-tab.svg" color="#166628">
+		<meta name="msapplication-TileColor" content="#00a300">
+		<meta name="theme-color" content="#e0ddcf">
+		
+		<!--STYLE SHEETS-->
+		<link href="css/reset.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		
+		<meta charset="UTF-8">
+		<title>Portage Trail Outfitters</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	
+	<body>
+		<div class="page-wrap">
+			<header class="page-header">
+				<a href="index.html">Portage Trail Outfitters</a>
+			</header>
+			
+			<nav class="topnav" id="myTopnav">
+				<a href="index.html" id="active">Home</a>
+				<a href="javascript:void(0);" class="icon" onclick="hamBurger()"><i class="fa fa-bars"></i></a>
+				
+				<div class="dropdown">
+					<a href="shop.html">Shop</a>
+					<a href="javascript:void(0)" onClick="dropDown1()" class="caret"><i class="fa fa-caret-right" id="arrowOne"></i></a>
+
+					<div class="dropdown-content">
+						<a href="housing.html">Housing</a>
+					</div>
+				</div>
+				
+				<div class="dropdown">
+					<a href="about.html">About</a>
+					<a href="javascript:void(0)" onClick="dropDown2()" class="caret"><i class="fa fa-caret-right" id="arrowTwo"></i></a>
+					
+					<div class="dropdown-content">
+						<a href="contact.html">Contact</a>
+						<a href="tips.html">Tips</a>
+						<a href="history.html">History</a>
+					</div>
+				</div>
+				
+				<script>
+					//ADDS A "RESPONSIVE" CLASS TO "TOPNAV" ON CLICK (SHOWS THE REST OF THE NAV BAR)
+					function hamBurger()
+					{
+  						var x = document.getElementById("myTopnav");
+  						if (x.className === "topnav")
+						{
+    						x.className += " responsive";
+  						} 
+						else
+						{
+    						x.className = "topnav";
+  						}
+					}
+					
+					//DISPLAYS "DROPDOWN-CONTENT" WHEN THE CARET IS CLICKED
+					var coll = document.getElementsByClassName("caret");
+					var i;
+					for (i = 0; i < coll.length; i++) 
+					{
+						coll[i].addEventListener
+						("click", function () 
+						{
+							this.classList.toggle("show");
+							var content = this.nextElementSibling;
+							if (content.style.display === "flex") 
+							{
+								content.style.display = "none";
+							} 
+							else 
+							{
+								content.style.display = "flex";
+							}
+						});
+					}
+					
+					//SWITCHES RIGHT-FACING ARROWS TO DOWN-FACING ARROWS
+					function dropDown1()
+					{
+						if (document.getElementById('arrowOne').getAttribute('class') === 'fa fa-caret-right')
+						{
+							document.getElementById('arrowOne').setAttribute('class', 'fa fa-caret-down');
+						}
+						else
+						{
+							document.getElementById('arrowOne').setAttribute('class', 'fa fa-caret-right');
+						}
+					};
+					
+					function dropDown2()
+					{
+						if (document.getElementById('arrowTwo').getAttribute('class') === 'fa fa-caret-right')
+						{
+							document.getElementById('arrowTwo').setAttribute('class', 'fa fa-caret-down');
+						}
+						else
+						{
+							document.getElementById('arrowTwo').setAttribute('class', 'fa fa-caret-right');
+						}
+					};
+				</script>
+			</nav> 
+			
+			<main>
+				<h1>Welcome!</h1>
+				<p>Welcome to Portage Trail Outfitters, nestled on the pristine banks of Ensign Lake, part of northern Minnesota’s world famous Boundary Waters Canoe Area Wilderness (BWCAW). At Portage Trail Outfitters, we pride ourselves on catering to your idea of an outdoor wilderness experience. Whether your sense of the great outdoors is a luxurious private cabin, or a bunkhouse to crash in before a peaceful and secluded trip into the wild, we can help you out.</p>
+				
+				
+				
+				<p><img class="tree-desktop" src="images/portage-tree.jpg" alt="a nice forest"/>In addition to various lodging options, Portage Trail Outfitters offers full service outfitting and guide services for your wilderness trip. Do you have the majority of your own gear, but forgot something? No problem, you can rent equipment à la cart. <br><br>At Portage Trail Outfitters, keep your eyes open for a rare moose sighting, ears open for the soothing evening song of the Minnesota loon, and your heart open for one of the most memorable experiences of your life. Enjoy your stay!</p>
+				
+				<img class="tree-mobile" src="images/portage-tree.jpg" alt="a nice forest"/>
+			</main>
+			
+			<article class="gear">
+				<p>Save the stress and let us get the gear together for you.</p>
+				<p>Portage Trail Outfitters offers only the most reliable and lightest weight gear. All packages are designed for two paddlers. For a solo trip outfitting prices or a custom quote please contact us.</p>
+				<p>Portage Trail Outfitters is also proud to offer fully guided trips. Take advantage of our wilderness experience and vast knowledge of the areas scenic beauty and wildlife hotspots.</p>
+			
+				<div class="button-wrapper">
+					<button class="collapse">Minimalist — $100/night <i class="fa fa-caret-down"></i></button>
+					<div class="content">
+						<div class="button-container">
+							<h2>Nothing fancy here, just the basics to get you and your partner through the week:</h2>
+							<ul>
+								<li>2 Lightweight Sleeping bags</li>
+								<li>2-person tent</li>
+								<li>2-person Camp kitchen</li>
+								<li>14 dehydrated meals (two servings each)</li>
+								<li>Water filter</li>
+								<li>17’ Kevlar canoe for lightweight portaging</li>
+								<li>3 paddles</li>
+								<li>2 life vests</li>
+								<li>2 Duluth Packs</li>
+							</ul>
+						</div>
+					</div>
+					<button class="collapse">Leave No Trace — $150/night <i class="fa fa-caret-down"></i></button>
+					<div class="content">
+						<div class="button-container">
+							<h2>Items in the Minimalist Package plus:</h2>
+							<ul>
+								<li>7 days of fresh coffee</li>
+								<li>2 lightweight camp pillows</li>
+								<li>1 Windproof butane lighter</li>
+								<li>2 self-inflating mattress pads</li>
+								<li>2 ultra light fishing rods </li>
+								<li>A variety of lead (and pollution) free fishing tackle</li>
+							</ul>
+						</div>
+					</div>
+
+					<button class="collapse">Wilderness Act — $225/night <i class="fa fa-caret-down"></i></button>
+					<div class="content">
+						<div class="button-container">
+							<h2>All items in both the Minimalist and the Leave No Trace plus:</h2>
+							<ul>
+								<li>1 satellite phone for emergencies</li>
+								<li>1 first aid kit</li>
+								<li>2 emergency survival kits</li>
+								<li>2 mosquito head nets</li>
+								<li>2 lightweight rain suits</li>
+								<li>1 2-in-1 hatchet/saw combo</li>
+								<li>1 biodegradable toiletries kit (toilet paper, shampoo, toothpaste, sunscreen, bug spray)</li>
+								<li>2 8-oz steaks for your first night</li>
+								<li>6 farm-fresh eggs for your first morning</li>
+								<li>1 bear proof food container</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<script>
+					var coll = document.getElementsByClassName("collapse");
+					var i;
+					for (i = 0; i < coll.length; i++) {
+						coll[i].addEventListener("click", function () {
+							this.classList.toggle("active");
+							var content = this.nextElementSibling;
+							if (content.style.display === "flex") {
+								content.style.display = "none";
+							} else {
+								content.style.display = "flex";
+							}
+						});
+					}
+				</script>
+			</article>
+			<footer class="page-footer">
+				<img class="footer-img" src="images/footer-trees.png" alt="a row of sillouetted trees"/>
+				
+				<a class="weatherwidget-io" href="https://forecast7.com/en/47d90n91d87/ely/?unit=us" data-label_1="Portage Trails" data-label_2="FORECAST" data-font="Arial" data-theme="dark">Portage Trails FORECAST</a>
+				<script>
+					!function(d,s,id)
+					{
+						var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id))
+						{
+							js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);
+						}
+					}
+					(document,'script','weatherwidget-io-js');
+				</script>
+				
+			</footer>
+		</div>
+	</body>
+</html>
