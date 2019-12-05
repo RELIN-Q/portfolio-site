@@ -34,7 +34,19 @@ h1
 	color:white;
 	background-color:#274943;
 	font-size:30pt;
-	padding-top:22px;
+	padding:24px;
+	padding-bottom:12px;
+}
+
+h2
+{
+	font-family:"Avenir Next Bold";
+	color:white;
+	background-color:#274943;
+	text-align:center;
+	font-size:16pt;
+	padding:12px;
+	padding-top:24px;
 }
 
 p
@@ -43,9 +55,8 @@ p
 	color:white;
 	background-color:#274943;
 	font-size:16pt;
-	padding:16px;
+	padding:12px 24px;
 	line-height:20pt;
-	font-kerning:0.002em;
 }
 
 .page-wrap
@@ -59,9 +70,8 @@ p
 {
 	font-family:"Belwe-Bold";
 	font-size:55pt;
-	line-height:60pt;
 	text-align:center;
-	padding:15px 0px;
+	padding:24px 0px;
 	vertical-align:middle;
 }
 
@@ -86,13 +96,13 @@ p
 /* Style the links inside the navigation bar */
 .topnav a
 {
-	flex:1 1 100%;
+	flex:1 1 0%;
 	font-family:"Avenir Next Bold";
 	font-size:35pt;
 	color:#474448;
 	text-align:left;
-	padding:18px;
-	padding-bottom:16px;
+	padding:12px;
+	padding-bottom:12px;
 	text-decoration:none;
 }
 
@@ -109,7 +119,7 @@ p
     top:0;
 	height:inherit;
 	width:inherit;
-	padding:0px 18px;
+	padding:0px 12px;
 }
 
 #active
@@ -178,7 +188,7 @@ main
 .tree-mobile
 {
 	max-width:100%;
-	margin:16px;
+	margin:24px;
 }
 
 .tree-desktop
@@ -230,20 +240,25 @@ main
 	background-color:#274943;
 	text-align:center;
 	font-size:16pt;
-	padding:16px;
-	padding-top:20px;
+	padding:24px 10%;
+}
+
+.button-container ul
+{
+	display:list-item;
+	list-style-type:disc;
 }
 
 .button-container ul li
 {
+	display:list-item;
+	list-style-type:disc;
 	font-family:"Avenir Next Regular";
 	color:white;
 	background-color:#274943;
 	font-size:16pt;
-	padding:16px;
+	padding:24px 10%;
 	margin:0;
-	line-height:20pt;
-	font-kerning:0.002em;
 }
 
 
@@ -251,7 +266,7 @@ main
 
 .page-footer
 {
-	margin-top:20px;
+	margin-top:24px;
 }
 
 .footer-img
@@ -271,6 +286,11 @@ main
 
 @media only screen and (min-width:42em)
 {	
+	main
+	{
+		margin-bottom:24px;
+	}
+	
 	.tree-mobile
 	{
 		display:none;
@@ -280,14 +300,19 @@ main
 	{
 		display:block;
 		float:left;
-		padding-right:16px;
+		padding-right:24px;
 		max-width:400px;
 		background-color:#274943;
 	}
 	
-	.gear
+	.button-container h2
 	{
-		margin-top:24px;
+		padding:24px;
+	}
+	
+	.button-container ul li
+	{
+		padding:12px 24px;
 	}
 	
 	.collapse
@@ -297,7 +322,7 @@ main
 	
 	.content
 	{
-		margin:-24px 0px 0px 0px;
+		margin:-24px 0px 24px 0px;
 	}
 	
 	/*------------NAVIGATION-------------*/
@@ -319,8 +344,8 @@ main
 		flex:1 1 100%;
 		justify-content:center;
 		padding:0;
-		padding-top:18px;
-		padding-bottom:16px;
+		padding-top:16px;
+		padding-bottom:12px;
   	}
 	
 	.topnav.responsive a
