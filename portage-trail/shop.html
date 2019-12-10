@@ -28,7 +28,7 @@
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 		
 		<meta charset="UTF-8">
-		<title>Portage Trail Outfitters</title>
+		<title>Outfitter Shop</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="#">
 		<meta name="keywords" content="Minnesota, hiking, camping, outdoors, canoeing, lodging, wilderness, Ensign Lake">
@@ -41,11 +41,11 @@
 			</header>
 			
 			<nav class="topnav" id="myTopnav">
-				<a href="index.html" id="active">Home</a>
+				<a href="index.html">Home</a>
 				<a href="javascript:void(0);" class="icon" onclick="hamBurger()"><i class="fa fa-bars"></i></a>
 				
 				<div class="dropdown">
-					<a href="shop.html">Shop</a>
+					<a href="shop.html" id="active">Shop</a>
 					<a href="javascript:void(0)" onClick="dropDown1()" class="caret"><i class="fa fa-caret-right" id="arrowOne"></i></a>
 
 					<div class="dropdown-content">
@@ -129,21 +129,130 @@
 				</script>
 			</nav> 
 			
-			<main>
-				<h1>Welcome!</h1>
-				<p>Welcome to Portage Trail Outfitters, nestled on the pristine banks of Ensign Lake, part of northern Minnesota’s world famous Boundary Waters Canoe Area Wilderness (BWCAW). At Portage Trail Outfitters, we pride ourselves on catering to your idea of an outdoor wilderness experience. Whether your sense of the great outdoors is a luxurious private cabin, or a bunkhouse to crash in before a peaceful and secluded trip into the wild, we can help you out.</p>
+			<main class="shop">
+				<h1>Housing &amp; Gear</h1>
+				<div class="button-wrapper">
+					<button class="collapse">Bunkhouse — $60/Night <i class="fa fa-caret-down"></i></button>
+					<div class="content">
+						<div class="button-container">
+							<h2>For the adventurous. Used primarily as a landing spot before heading into the BWCAW.<br>There are  3 available.</h2>
+							<ul>
+								<li>Sleeps 6</li>
+								<li>3 sets of bunk beds</li>
+								<li>Includes blankets, pillows, sheets, and an occasional spider.</li>
+								<li>Access to a community kitchen/rec area to fry up the catch of the day or to play some cards.</li>
+							</ul>
+						</div>
+					</div>
 				
-				<p><img class="tree-desktop" src="images/portage-tree.jpg" alt="a nice forest"/>In addition to various lodging options, Portage Trail Outfitters offers full service outfitting and guide services for your wilderness trip. Do you have the majority of your own gear, but forgot something? No problem, you can rent equipment &agrave; la cart. <br><br>At Portage Trail Outfitters, keep your eyes open for a rare moose sighting, ears open for the soothing evening song of the Minnesota loon, and your heart open for one of the most memorable experiences of your life.</p>
-				<h3>Enjoy your stay!</h3>
+					<button class="collapse">Small Cabin — $150/Night or $900/Week <i class="fa fa-caret-down"></i></button>
+					<div class="content">
+						<div class="button-container">
+							<h2>Our most popular option, these cabins give you a taste of the great outdoors while offering comfort, ample space, and a private dining area.<br>There are 4 available.</h2>
+							<ul>
+								<li>Sleeps up to 8</li>
+								<li>Loft area for sleeping with two queen beds and two sets of bunk beds.</li>
+								<li>Fish cleaning services</li>
+								<li>50 inch LED smart TV</li>
+							</ul>
+						</div>
+					</div>
+				
+					<button class="collapse">Luxury Cabin — $250/Night <i class="fa fa-caret-down"></i></button>
+					<div class="content">
+						<div class="button-container">
+							<h2>Cabins specifically suited to make you feel like you're not actually camping.<br>There are 2 available.</h2>
+							<ul>
+								<li>Sleeps 8</li>
+								<li>Two master suites, each with king beds and private baths</li>
+								<li>2 Hideaway beds in living room</li>
+								<li>Free Wi-Fi</li>
+								<li>Private kitchen/dining area</li>
+								<li>Private Hot tub area</li>
+								<li>Fully stocked beverage cooler</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<img class="tree-mobile" src="images/cabin.jpg" alt="a cabin in the woods"/>
+				<img class="tree-desktop" src="images/cabin.jpg" alt="a cabin in the woods"/>
+			</main>
+				
+			<article>
+				<h2 id="packages">Save the stress and let us get the gear together for you.</h2>
+				<p>Portage Trail Outfitters offers only the most reliable and lightest-weight gear. All packages are designed for two paddlers. For a solo trip, outfitting prices, or a custom quote please <a class="link" href="about.html#contact">contact us.</a></p>
+				<p>Portage Trail Outfitters is also proud to offer fully guided trips. Take advantage of our wilderness experience and vast knowledge of the areas scenic beauty and wildlife hotspots.</p>
+			
+				<div class="button-wrapper">
+					<button class="collapse">Minimalist — $100/Night <i class="fa fa-caret-down"></i></button>
+					<div class="content">
+						<div class="button-container">
+							<h2>Nothing fancy here, just the basics to get you and your partner through the week:</h2>
+							<ul>
+								<li>2 Lightweight Sleeping bags</li>
+								<li>2-person tent</li>
+								<li>2-person Camp kitchen</li>
+								<li>14 dehydrated meals (two servings each)</li>
+								<li>Water filter</li>
+								<li>17’ Kevlar canoe for lightweight portaging</li>
+								<li>3 paddles</li>
+								<li>2 life vests</li>
+								<li>2 Duluth Packs</li>
+							</ul>
+						</div>
+					</div>
+					<button class="collapse">Leave No Trace — $150/Night <i class="fa fa-caret-down"></i></button>
+					<div class="content">
+						<div class="button-container">
+							<h2>Items in the Minimalist Package plus:</h2>
+							<ul>
+								<li>7 days of fresh coffee</li>
+								<li>2 lightweight camp pillows</li>
+								<li>1 Windproof butane lighter</li>
+								<li>2 self-inflating mattress pads</li>
+								<li>2 ultra light fishing rods </li>
+								<li>A variety of lead (and pollution) free fishing tackle</li>
+							</ul>
+						</div>
+					</div>
+
+					<button class="collapse">Wilderness Act — $225/Night <i class="fa fa-caret-down"></i></button>
+					<div class="content">
+						<div class="button-container">
+							<h2>All items in both the Minimalist and the Leave No Trace plus:</h2>
+							<ul>
+								<li>1 satellite phone for emergencies</li>
+								<li>1 first aid kit</li>
+								<li>2 emergency survival kits</li>
+								<li>2 mosquito head nets</li>
+								<li>2 lightweight rain suits</li>
+								<li>1 2-in-1 hatchet/saw combo</li>
+								<li>1 biodegradable toiletries kit (toilet paper, shampoo, toothpaste, sunscreen, bug spray)</li>
+								<li>2 8-oz steaks for your first night</li>
+								<li>6 farm-fresh eggs for your first morning</li>
+								<li>1 bear proof food container</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 				
 				<img class="tree-mobile" src="images/portage-tree.jpg" alt="a nice forest"/>
-			</main>
-			
-			<article class="gear">
-				<h2>Interested in outfitting yourself?</h2>
-				<p>Download our suggested packing list for a weeklong stay in the wilderness. Feel free to use the list to help prepare for your trip, or to order any items that you may be missing. Items with an asterisk can be rented individually for &agrave; la carte pricing.</p>
-				
-				<p>Please email any needs to <a class="link" href="mailto:info@portagetrailoutfitters.com" target="_blank">info@portagetrailoutfitters.com</a> for a custom quote.</p>
+			</article>
+			<article>
+				<h2 id="used-gear">Additional Gear for Sale</h2>
+				<p>At Portage Trail Outfitters, we pride ourselves on keeping high quality, up to date gear available to our visitors. Because of this, we cycle our gear out every three years to make room for new items. Below you can find a current list of gently used items available for purchase.</p>
+				<ul>
+					<li>Camp Stove</li>
+					<li>Water Filters</li>
+					<li>Hatchet</li>
+					<li>Saw</li>
+					<li>Tent</li>
+					<li>Compass</li>
+					<li>Sleeping Bag</li>
+					<li>Flashlight</li>
+					<li>Kevlar canoe</li>
+				</ul>
 				
 				<script>
 					var coll = document.getElementsByClassName("collapse");
@@ -166,6 +275,7 @@
 					}
 				</script>
 			</article>
+			
 			<footer class="page-footer">
 				<img class="footer-img" src="images/footer-trees.png" alt="a row of sillouetted trees"/>
 				

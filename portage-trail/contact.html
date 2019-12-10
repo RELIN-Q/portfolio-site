@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153085022-1"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag()
+			{
+				dataLayer.push(arguments);
+			}
+  			gtag('js', new Date());
+  			gtag('config', 'UA-153085022-1');
+		</script>
+		
+		<!--FAVICON-->
+		<link rel="apple-touch-icon" sizes="180x180" href="css/media/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="css/media/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="css/media/favicon/favicon-16x16.png">
+		<link rel="manifest" href="css/media/favicon/site.webmanifest">
+		<link rel="mask-icon" href="css/media/favicon/safari-pinned-tab.svg" color="#166628">
+		<meta name="msapplication-TileColor" content="#00a300">
+		<meta name="theme-color" content="#e0ddcf">
+		
+		<!--STYLE SHEETS-->
+		<link href="css/reset.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		
+		<meta charset="UTF-8">
+		<title>Contact Us</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="#">
+		<meta name="keywords" content="Minnesota, hiking, camping, outdoors, canoeing, lodging, wilderness, Ensign Lake">
+	</head>
+	
+	<body>
+		<div class="page-wrap">
+			<header class="page-header">
+				<a href="index.html">Portage Trail Outfitters</a>
+			</header>
+			
+			<nav class="topnav" id="myTopnav">
+				<a href="index.html">Home</a>
+				<a href="javascript:void(0);" class="icon" onclick="hamBurger()"><i class="fa fa-bars"></i></a>
+				
+				<div class="dropdown">
+					<a href="shop.html">Shop</a>
+					<a href="javascript:void(0)" onClick="dropDown1()" class="caret"><i class="fa fa-caret-right" id="arrowOne"></i></a>
+
+					<div class="dropdown-content">
+						<a href="shop.html#packages">Packages</a>
+						<a href="shop.html#used-gear">Used Gear</a>
+					</div>
+				</div>
+				
+				<div class="dropdown">
+					<a href="contact.html" id="active">Contact</a>
+					<a href="javascript:void(0)" onClick="dropDown2()" class="caret"><i class="fa fa-caret-right" id="arrowTwo"></i></a>
+					
+					<div class="dropdown-content">
+						<a href="contact.html#history">History</a>
+						<a href="contact.html#tips">Tips</a>
+						<a href="contact.html#attractions">Attractions</a>
+					</div>
+				</div>
+				
+				<script>
+					//ADDS A "RESPONSIVE" CLASS TO "TOPNAV" ON CLICK (SHOWS THE REST OF THE NAV BAR)
+					function hamBurger()
+					{
+  						var x = document.getElementById("myTopnav");
+  						if (x.className === "topnav")
+						{
+    						x.className += " responsive";
+  						} 
+						else
+						{
+    						x.className = "topnav";
+  						}
+					}
+					
+					//DISPLAYS "DROPDOWN-CONTENT" WHEN THE CARET IS CLICKED
+					var coll = document.getElementsByClassName("caret");
+					var i;
+					for (i = 0; i < coll.length; i++) 
+					{
+						coll[i].addEventListener
+						("click", function () 
+						{
+							this.classList.toggle("show");
+							var content = this.nextElementSibling;
+							if (content.style.display === "flex") 
+							{
+								content.style.display = "none";
+							} 
+							else 
+							{
+								content.style.display = "flex";
+							}
+						});
+					}
+					
+					//SWITCHES RIGHT-FACING ARROWS TO DOWN-FACING ARROWS
+					function dropDown1()
+					{
+						if (document.getElementById('arrowOne').getAttribute('class') === 'fa fa-caret-right')
+						{
+							document.getElementById('arrowOne').setAttribute('class', 'fa fa-caret-down');
+						}
+						else
+						{
+							document.getElementById('arrowOne').setAttribute('class', 'fa fa-caret-right');
+						}
+					};
+					
+					function dropDown2()
+					{
+						if (document.getElementById('arrowTwo').getAttribute('class') === 'fa fa-caret-right')
+						{
+							document.getElementById('arrowTwo').setAttribute('class', 'fa fa-caret-down');
+						}
+						else
+						{
+							document.getElementById('arrowTwo').setAttribute('class', 'fa fa-caret-right');
+						}
+					};
+					
+				</script>
+			</nav> 
+			
+			<main class="contact">
+				<h1>Contact Information</h1>
+					<p>Portage Trail Outfitters<br>N6745 West Wilderness Way<br>Ely, MN 55731</p>
+				
+					<p>(555) 890-4621</p>
+					<p><a class="link" href="mailto:info@portagetrailoutfitters.com">info@portagetrailoutfitters.com</a></p>
+				
+					<h2>Peak Season Office Hours</h2>
+					<p>Memorial Day weekend — Labor Day weekend<br>8:00am — 8:00pm, 7 days a week</p>
+
+					<h2>Rest of the Year</h2>
+					<p>Monday — Friday, 10:00am — 4:00pm<br>Saturday and Sunday by appointment only.</p>
+
+					<p>Of course you can always find us on social media. Check us out on Facebook, twitter, and Flickr.</p>
+			</main>
+				
+			<article id="history">
+				<h1>History of the BWCAW</h1>
+				
+				<img class="tree-mobile" src="images/wilderness.jpg" alt="a nice forest"/>
+				
+				<aside>
+					<img class="tree-desktop" src="images/wilderness.jpg" alt="a nice forest"/>
+					<h2 style="justify-content:left;">wilderness</h2>
+
+					<p>[wil-der-nis]</p>
+
+					<p style="font-style:italic;">noun</p>
+
+					<ol>
+						<li>a wild and uncultivated region, as of forest or desert, uninhabited or inhabited only by wild animals; a tract of wasteland.</li>
+						<li>a tract of land officially designated as such and protected by the U.S. government.</li>
+						<li>any desolate tract, as of open sea.</li>
+					</ol>
+				</aside>
+				
+				<p>Within it’s designated 1 million plus acres, the BWCAW contains over a thousand lakes and attracts visitors with its reputation for canoeing, canoe touring, fishing, backpacking, dog sledding, and remote wilderness character. The BWCAW has nearly 2,200 backcountry campsites and is one of Minnesota's top tourist attractions, drawing visitors from all over the United States as well as abroad.</p>
+				
+				<p>The Boundary Waters area contains both the boreal forest (taiga) and a mixed conifer-hardwood forest known as the North Woods, which is a transition province between the northern boreal forest and deciduous forests to the south. The ranges of the plants and animals continue north into southern Canada and south into the rest of the upper Great Lakes region. Trees found within the wilderness area include conifers such as red pine, eastern white pine, jack pine, balsam fir, white spruce, black spruce, and white-cedar, as well as deciduous birch, aspen, ash, and maple. Blueberries are common in many parts of the BWCAW, as are raspberries. The BWCAW is estimated to contain some 400,000 acres (1,600 km2) of old growth forest, woods which may have burned but which have never been logged. Forest fires were a natural part of the Boundary Waters ecosystem before fire suppression efforts during the 20th century, with recurrence intervals of 30 – 300 years in most areas.</p>
+				
+				<p>On July 4, 1999, a powerful wind storm, or derecho, swept across Minnesota and southern Canada, knocking down millions of trees and affecting about 370,000 acres (1,500 km2) within the BWCAW. This event became known officially as the Boundary Waters-Canadian Derecho, commonly referred to as "the Boundary Waters blowdown". Although campsites and portages were quickly cleared after the storm, an increased risk of wildfire continues to remain a concern due to the large number of downed trees. The U.S. Forest Service has undertaken a schedule of prescribed burns to reduce the forest fuel load in the event of a wildfire.</p>
+			</article>
+			
+			<article id="tips">
+				<h1>BWCAW Tips</h1>
+				<p>We are continually adding more tried-and-true tips to our list. If you have anything to share, please email them to info@portagetrailoutfitters.com </p>
+				<ol>
+					<li>Boil your water! – Gary F. from Milwaukee.</li>
+					<li>Always wear a life jacket  - Billy K. from Madison.</li>
+					<li>Bring plenty of food – Sally W. from Los Angeles.</li>
+					<li>Camp with the people you get along with – Steph from Ontario.</li>
+					<li>Bring a current map – Bailey C. from Flint.</li>
+				</ol>
+			</article>
+			
+			<article id="attractions">
+				<h1>Area Attractions</h1>
+				<p>Located 8 miles northeast of Ely, MN there are a variety of activities only a short drive away.</p>
+				
+				<h2><a class="link" href="http://www.wolf.org/">International Wolf Center</a></h2>
+				<p>Did you know that red wolves are larger than coyotes and smaller than gray wolves or that red wolf packs are generally smaller than gray wolf packs? Find out much more about these interesting and intelligent species at the International Wolf Center.</p>
+				
+				<h2><a class="link" href="http://www.bear.org/website/">North American Bear Center</a></h2>
+				<p>Wolves not your thing? Visit the North American Bear Center to find out why male bears can lose over 100lbs over the winter months, and to see bears live in captivity.</p>
+				
+				<h2><a class="link" href="http://rootbeerlady.com/">Dorothy Molter Museum</a></h2>
+				<p>Known as the Root Beer Lady, take a guided tour of the home of the last resident of the Boundary Waters Canoe Area Widerness. Find out why she was a beloved host to countless travelers prior to 1987.</p>
+			</article>
+			
+			<footer class="page-footer">
+				<img class="footer-img" src="images/footer-trees.png" alt="a row of sillouetted trees"/>
+				
+				<div class="links">
+					<a class="link" href="#facebook#"><i class="fa fa-facebook fa-2x"></i></a>
+					<a class="link" href="#twitter#"><i class="fa fa-twitter fa-2x"></i></a>
+					<a class="link" href="#flickr#"><i class="fa fa-flickr fa-2x"></i></a>
+				</div>
+				
+				<a class="weatherwidget-io" href="https://forecast7.com/en/47d90n91d87/ely/?unit=us" data-label_1="Portage Trails" data-label_2="FORECAST" data-font="Arial" data-theme="dark">Portage Trails FORECAST</a>
+				<script>
+					!function(d,s,id)
+					{
+						var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id))
+						{
+							js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);
+						}
+					}
+					(document,'script','weatherwidget-io-js');
+				</script>
+			</footer>
+		</div>
+	</body>
+</html>
