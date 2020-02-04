@@ -1,0 +1,261 @@
+@charset "UTF-8";
+
+body
+{
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size:100%;
+	color:black;
+	margin:0px 10px;
+	background-color:goldenrod;
+}
+
+h1,h3
+{
+	margin-bottom:0;
+}
+
+h4
+{
+	margin:5px 0px;
+}
+
+p
+{
+	margin-top:0;
+	line-height:1.25em;
+}
+
+.page-wrap
+{
+	max-width:1000px;
+	margin:0 auto;
+	background-color:white;
+}
+
+.page-nav
+{
+	background-color:#04548C;
+	text-align:center;
+	padding:10px;
+}
+
+.page-nav ul
+{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+
+.page-nav ul li
+{
+	display:inline-block;
+	margin:0px 10px;
+}
+
+.page-nav ul li a:link
+{
+	color:white;
+}
+
+.page-nav ul li a:visited
+{
+	color:white;
+}
+
+
+
+.page-header
+{
+	background-image:url("image/jazzy-chicago-club.jpg");
+	height:100px;
+}
+
+.page-header h1
+{
+	font-family:'Pacifico', cursive;
+	font-size:3em;
+	font-weight:normal;
+	color:goldenrod;
+	text-align:center;
+	margin-top:0;
+}
+
+
+
+figure
+{
+	margin:0;
+}
+
+.page-content
+{
+	max-width:600px;
+	margin:0 auto;
+	padding:15px;
+}
+
+.artists
+{
+	max-width:400px;
+	background-color:goldenrod;
+	font-size:125%;
+	margin:0px auto 40px auto;
+	padding:10px;
+}
+
+
+
+.aside
+{
+	text-align:center;
+	max-width:500px;
+	margin:0 auto;
+	padding:15px;
+}
+
+.aside p
+{
+	text-align:left;
+}
+
+
+
+.page-footer
+{
+	background-color:#04548C;
+	color:white;
+	text-align:center;
+	clear:both;
+	padding:10px;
+}
+
+.footer-title
+{
+	font-size:150%;
+}
+
+.footer-title h3
+{
+	font-family:'Pacifico', cursive;
+	font-weight:normal;
+	font-size:175%;
+	margin-top:0;
+}
+
+.scaling-img
+{
+	max-width:100%;
+	height:auto;
+}
+
+.clearfix:after
+{
+	content:"";
+	display:table;
+	clear:both;
+}
+
+@media only screen and (min-width:42em)
+{
+	.page-nav
+	{
+		text-align:center;
+	}
+	
+	.page-header h1
+	{
+		text-align:left;
+		margin-left:25px;
+	}
+	
+	.jazz-artist-box
+	{
+		display:flex;
+		background-color:goldenrod;
+		padding:10px;
+		padding-bottom:0px;
+	}
+	
+	.artists
+	{
+		font-size:110%;
+		background-color:transparent;
+		margin-bottom:0;
+	}
+	
+	.aside
+	{
+		max-width:600px;
+	}
+	
+	.aside h3
+	{
+		text-align:left;
+		margin-top:0px;
+	}
+	
+	.album-img
+	{
+		float:left;
+		margin-right:15px;
+		width:280px;
+		height:280px;
+	}
+	
+	.page-footer
+	{
+		display:flex;
+		justify-content:space-around;
+	}
+	
+	.footer-coming-soon, .footer-open-mic, .footer-title
+	{
+		flex:1 1 100%;
+	}
+	
+	.footer-title
+	{
+		font-size:100%;
+	}
+}
+
+@media only screen and (min-width:62.5em)
+{
+	.page-content
+	{
+		float:left;
+		width:60%;
+		margin:4%;
+		padding:0;
+	}
+	
+	.aside
+	{
+		max-width:28%;
+		float:right;
+		margin-right:4%;
+		margin-top:4%;
+		padding:0;
+	}
+	
+	.page-footer
+	{
+		align-items:center;
+	}
+	
+	.footer-coming-soon
+	{
+		order:3;
+	}
+	
+	.footer-open-mic
+	{
+		order:1;
+	}
+	
+	.footer-title
+	{
+		order:2;
+		font-size:120%;
+	}
+}
