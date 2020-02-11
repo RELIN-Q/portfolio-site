@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color: #6681ad;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 100%;
+}
+
+.page-wrap {
+	max-width: 35em;
+	padding: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #d3d3d3;
+}
+
+h2{
+	color: #ba8e28;
+}
+h2, h3, p {
+	line-height:1.35em;
+}
+
+h2, h3 {
+margin-top:0px;
+margin-bottom:0px;	
+}
+
+
+fieldset {
+	border: none;
+	padding-top:10px;
+	margin-bottom: 1em;
+	background-color:#999999;
+	box-shadow: 2px 2px 2px black;
+}
+
+
+fieldset h2 {
+	font-weight: bold;
+	margin-bottom: 15px;
+	COlor: black;
+	font-size: 1.25em;
+}
+	
+
+
+.form-label{
+	margin:0 0 1.5em 0;
+    padding:0 0.5em 0 0;
+	line-height: 2em;
+	text-align: left;
+}
+
+.form-input{
+    margin:0 0.5em 0.5em 0;
+	height:2em;
+	background-color:#E1E1E1;
+	border-radius: 2px;
+	width: 100%;
+	text-align: left;
+	
+}
+
+.comments{
+	height: 8em;
+
+}
+
+.radio-checkbox-input{
+	float:left;
+	margin-right: 5px;
+	margin-left:25px;
+}
+
+.dropdown{
+height: 2em;
+	margin-top: 1.25em;
+	
+}
+
+.cta-fieldset {
+	text-align: center;
+
+
+}
+.button{
+  font-size: 1em;
+  color:#FFFFFF;
+  background-color:#0066FF;
+  border-radius: 5px;
+  padding: 20px;
+  text-shadow: 2px 2px 0px #009;
+  cursor:pointer;
+  box-shadow: 1px 1px 2px #000;
+  margin-bottom: 20px;
+  animation: color 3s infinite;
+	
+	
+}
+@keyframes color{
+	0%{background-color: blue}
+	50%{background-color: darkblue}
+	100%{background-color: blue}
+
+}
+
+
+@media (min-width: 42em){
+	.page-wrap{
+		padding: 50px 100px;
+	}
+	
+	.form-input{
+		width: 75%;
+		text-align: left;
+		float: right;
+		
+	}
+	
+	.form-label{
+		float: left;
+		clear: both;
+		text-align: right;
+		width: 20%;
+	}
+	
+	.button{
+		font-size: 1.5em;
+	
+	}
+	
+	
+}
+

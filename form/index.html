@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Form Start</title>
+		<link href="main.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div class="page-wrap">
+		<h2>Contact Form Demo </h2>
+			<p>Let's explore forms!</p>
+
+			<!--Insert FORM Here-->
+			<form action="formprocess.php" method="post">
+				<fieldset> 
+				<h2>Contact Information</h2>
+					<!-- Name Stuff -->	
+					<label class="form-label">Name: </label>
+					<input name="name" type="text" autofocus="autofocus" required="required" class="form-input" id="name" placeholder="Name">
+
+					<!-- Email Stuff -->	
+					<label class="form-label">Email: </label>
+					<input name="email" type="text" required="required" class="form-input" id="email" placeholder="Email address">
+
+					<!-- Comment Stuff -->	
+					<label class="form-label">Comments: </label>
+					<textarea name="comments" class="form-input comments" id="comments" placeholder="Hello, I'm not sure why ths doesn't work. Does it have something to do with my css?"> </textarea>
+				</fieldset>
+
+
+				<fieldset>
+				<h2> Preferences</h2>
+					<p>
+					<label>Contact Me:</label>
+					  	<select name="preferred" id="preferred" class="dropdown">
+							<option value="email">via Email</option>
+							<option value="phone">by telephone</option>
+					  	</select>
+					</p>
+				  	<p>
+					<label>
+						<input name="optin" type="radio" id="optin_0" value="yes" checked="checked">
+							Sign me up for email updates</label>
+						
+						<br>
+						
+					<label>
+						<input type="radio" name="optin" value="no" id="optin_1">
+						Nawww, leave me alone</label>
+						
+						<br>
+						
+				  	</p>
+				</fieldset>
+				
+				<fieldset class="cta-fieldset">
+				  <h4> What are you waiting for?!</h4>
+				  <input name="submit" type="submit" class="button" id="submit" value="Enjoy your 20% Discount!">
+				</fieldset>
+			</form>	
+		</div>
+	</body>
+</html>
