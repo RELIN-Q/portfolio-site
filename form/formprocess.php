@@ -27,7 +27,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Confirmation Page</title>
-		<link href="../form/main.css" rel="stylesheet" type="text/css">
+		<link href="main.css" rel="stylesheet" type="text/css">
 
 		<style>
 			.custom-text
