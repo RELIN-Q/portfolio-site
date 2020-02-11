@@ -1,13 +1,11 @@
 <?php
-
-//This stuff triggers the form submission, customizes where the email goes and what shows up in the subject line.	
-
+	//This stuff triggers the form submission, customizes where the email goes and what shows up in the subject line.	
 	if (isset($_POST['submit']))//match the name of your submit button
 	{
 		$to = 'jordanmattmiller@gmail.com'; //use your email address you want to get the messages at
 		$subject = 'Website inquiry'; //The subject line in received messages
 
-//This stuff shows up in the body of the email you get when someone fill out and submits a form.	
+		//This stuff shows up in the body of the email you get when someone fill out and submits a form.	
 		
 		$message = 'name: ' . $_POST['name'] . "\r\n\r\n"; //match the 'name' attribute in the formfield	
 		$message .= 'email address: ' . $_POST['email'] . "\r\n\r\n";
