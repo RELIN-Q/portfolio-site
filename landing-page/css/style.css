@@ -84,7 +84,9 @@ fieldset
 	outline:none;
 	border-radius:0px;
 	
-	margin:auto;
+	align-self:center;
+	
+	margin:0px;
 	margin-bottom:20px;
 }
 
@@ -110,19 +112,16 @@ label
 	font-size:2em;
 }
 
-.submit
-{
-	text-align:center;
-}
-
 .button
 {
+	align-self:center;
+	text-align:center;
 	border-right:none;
 	width:50%;
 	height:40px;
 	line-height:28px;
 	cursor:pointer;
-	margin:15px auto;
+	margin:15px 0px;
 }
 
 ::placeholder /*Chrome, Firefox, Opera, Safari 10.1+*/
