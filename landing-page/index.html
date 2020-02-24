@@ -30,10 +30,13 @@
 				<p>Sign up for our weekly newsletter to get updates on events, specials, and ticket deals.</p>
 			</main>
 			
-			<form>
+			<form action="formprocess.php" method="post">
 				<fieldset>
-					<input class="form-input" name="name" type="text" required="required" id="name" placeholder="name" autofocus="autofocus">
-					<input name="email" type="text" required="required" class="form-input" id="email" placeholder="email">
+					<label class="name-label" for="name">name</label>
+						<input class="form-input" name="name" type="text" required="required" id="name">
+					
+					<label class="email-label" for="email">email</label>
+						<input name="email" type="text" required="required" class="form-input" id="email">
 				</fieldset>
 				
 				<fieldset class="cta-fieldset">
@@ -55,11 +58,11 @@
 			</article>
 			
 			<footer class="page-footer">
-				<img src="images/coffee.jpg" srcset="images/coffee2x 2x, images/coffee3x.jpg 3x" alt="lattes and macchiatos in a ring on a coffee table" width="400px">
+				<img src="images/coffee.jpg" srcset="images/coffee2x.jpg 2x, images/coffee3x.jpg 3x" alt="lattes and macchiatos in a ring on a coffee table">
 				
-				<img src="images/singer.jpg" srcset="images/singer2x 2x, images/singer3x.jpg 3x" alt="a performer playing electric guitar on stage in front of a microphone" width="400px">
+				<img src="images/singer.jpg" srcset="images/singer2x.jpg 2x, images/singer3x.jpg 3x" alt="a performer playing electric guitar on stage in front of a microphone">
 				
-				<img src="images/cafe.jpg" srcset="images/cafe2x 2x, images/cafe3x.jpg 3x" alt="a table in the cafe with a menu on a chalkboard in the background" width="400px">
+				<img src="images/cafe.jpg" srcset="images/cafe2x.jpg 2x, images/cafe3x.jpg 3x" alt="a table in the cafe with a menu on a chalkboard in the background">
 			</footer>
 		</div>
 	</body>

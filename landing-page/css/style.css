@@ -20,8 +20,6 @@ body
 	max-width:1000px;
 	margin:0 auto;
 	height:100%;
-	display:flex;
-	flex-flow:column nowrap;
 }
 
 .header-img-mobile
@@ -76,7 +74,8 @@ fieldset
 	font-family:"Gilroy";
 	color:black;
 	font-size:2em;
-	height:40px;
+	height:50px;
+	line-height:28px;
 	
 	background-color:rgba(0,0,0,0.0);
 	border:15px solid black;
@@ -85,8 +84,8 @@ fieldset
 	outline:none;
 	border-radius:0px;
 	
+	margin:auto;
 	margin-bottom:20px;
-	padding:none;
 }
 
 .form-input
@@ -100,13 +99,30 @@ fieldset
     box-shadow:none;
 }
 
+label
+{
+	position:relative;
+	left:0%;
+	top:9px;
+	
+	font-family:"Gilroy";
+	color:black;
+	font-size:2em;
+}
+
+.submit
+{
+	text-align:center;
+}
+
 .button
 {
 	border-right:none;
 	width:50%;
-	line-height:22px;
+	height:40px;
+	line-height:28px;
 	cursor:pointer;
-	margin:0 auto;
+	margin:15px auto;
 }
 
 ::placeholder /*Chrome, Firefox, Opera, Safari 10.1+*/
@@ -117,7 +133,7 @@ fieldset
 
 .events
 {
-	align-self:center;
+	margin:0 auto;
 	max-width:700px;
 }
 
@@ -178,7 +194,11 @@ article p
 	.form-input
 	{
 		width:75%;
-		margin:0px auto 25px auto;
+	}
+	
+	label
+	{
+		left:12.5%;
 	}
 	
 	.button
@@ -213,6 +233,11 @@ article p
 	.form-input
 	{
 		width:50%;
+	}
+	
+	label
+	{
+		left:25%;
 	}
 	
 	.button
