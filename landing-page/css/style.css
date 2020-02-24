@@ -144,8 +144,7 @@ article h2
 	line-height:40px;
 	
 	border-bottom:15px solid black;
-	
-	margin:50px 0px 25px 0px;
+	margin:50px 0px 10px 0px;
 }
 
 article p
@@ -171,7 +170,8 @@ article p
 .page-footer img
 {
 	max-width:100%;
-	margin:0.5em;
+	margin:0;
+	margin-top:1em;
 }
 
 @media only screen and (min-width:475px) /*tablet*/
