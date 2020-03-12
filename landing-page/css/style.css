@@ -84,9 +84,7 @@ fieldset
 	outline:none;
 	border-radius:0px;
 	
-	align-self:center;
-	
-	margin:0px;
+	margin:0 auto;
 	margin-bottom:20px;
 }
 
@@ -94,6 +92,7 @@ fieldset
 {
 	width:100%;
 	box-sizing:border-box;
+	padding:0;
 }
 
 .form-input:invalid 
@@ -101,15 +100,22 @@ fieldset
     box-shadow:none;
 }
 
-label
+.label
 {
 	position:relative;
-	left:0%;
-	top:9px;
+	top:40px;
+	cursor:text;
 	
 	font-family:"Gilroy";
 	color:black;
 	font-size:2em;
+	
+	transition:top 0.6s;
+}
+
+.label.focused
+{
+	top:9px;
 }
 
 .button
@@ -121,7 +127,7 @@ label
 	height:40px;
 	line-height:28px;
 	cursor:pointer;
-	margin:15px 0px;
+	margin:15px auto;
 }
 
 ::placeholder /*Chrome, Firefox, Opera, Safari 10.1+*/
@@ -169,7 +175,7 @@ article p
 .page-footer img
 {
 	max-width:100%;
-	margin:0;
+	margin:0px;
 	margin-top:1em;
 }
 

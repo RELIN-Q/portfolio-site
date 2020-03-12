@@ -32,16 +32,43 @@
 			
 			<form action="formprocess.php" method="post">
 				<fieldset>
-					<label class="name-label" for="name">name</label>
-						<input class="form-input" name="name" type="text" required="required" id="name">
+					<label class="label" for="name">name</label>
+					<input class="form-input" name="name" type="text" required="required" id="name">
 					
-					<label class="email-label" for="email">email</label>
-						<input name="email" type="text" required="required" class="form-input" id="email">
+					<label class="label" for="email">email</label>
+					<input class="form-input" name="email" type="text" required="required" id="email">
 				</fieldset>
 				
 				<fieldset class="cta-fieldset">
 					<input name="submit" type="submit" class="button" id="submit" value="submit">
 				</fieldset>
+				
+				<script>
+					function setFocused()
+					{
+						var results = document.querySelectorAll('.label');
+						for (result of results)
+						{
+							result.classList.add('focused');
+						}
+					}
+
+					function unsetFocused()
+					{
+						var results = document.querySelectorAll('.label');
+						for (result of results)
+						{
+							result.classList.remove('focused');
+						}
+					}
+
+					var results = document.querySelectorAll('input[type="text"]');
+					for (result of results)
+					{
+						result.addEventListener("focusin", setFocused);
+						result.addEventListener("focusout", unsetFocused);
+					}
+				</script>
 			</form>
 			
 			<article class="events">
